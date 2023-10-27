@@ -52,7 +52,10 @@ export const SearchPage = () => {
             </div>
           ) : (
             heroes.length === 0 && (
-              <div className="alert alert-danger animate__animated animate__fadeIn">
+              <div
+                className="alert alert-danger animate__animated animate__fadeIn"
+                aria-label="search-hero"
+              >
                 No hero with<b>{q}</b>
               </div>
             )
